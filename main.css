@@ -1,0 +1,86 @@
+@font-face {
+ font-family: "raleway";
+ src: url(raleway_thin.ttf) format("truetype");
+}
+
+@font-face {
+ font-family: "ubuntu";
+ src: url(ubuntu_reg.ttf) format("truetype");
+}
+
+h1 {
+ font-family: inherit;
+ font-weight: inherit;
+ font-size: 24px;
+ text-align:center; 
+}
+
+a {
+ font-family: inherit;
+ color: inherit;
+ text-decoration: none;
+}
+
+a:hover {
+ font-weight: bolder;
+}
+
+#mainContainer {
+ height:80%;
+ width:60%;
+ min-width:600px;
+ margin:0 auto;
+ padding:0px;
+
+ border-right:1px solid silver; 
+ border-left:1px solid silver; 
+ border-radius:15px;
+
+}
+
+#logoContainer {
+ font-family: raleway;
+ font-size: 36px;
+ margin-top: 20px; 
+ text-align:center;
+
+}
+
+#menuContainer {
+ font-family:raleway;
+ margin: 0 auto;
+ text-align: center;
+
+ border-top-right-radius:20px;
+ border-top-left-radius:20px;
+ border-bottom-right-radius:5px;
+ border-bottom-left-radius:5px;
+ background-color: white;
+ border-bottom: 2px solid black;
+ width:400px; 
+}
+
+.menuLink {
+ display:inline-block;
+ padding: 10px;
+}
+
+#contentContainer {
+ width: 60%;
+ min-width:400px;
+ font-family:ubuntu;
+ font-size: 16px;
+ margin:0 auto;
+ margin-top:20px;
+}
+
+#contentContainer a {
+ color:maroon;
+}
+
+#copyrightContainer {
+ font-family:raleway;
+ font-size:16px;
+ text-align: center;
+ margin-top:20px;
+} 
