@@ -25,6 +25,29 @@ a:hover {
  font-weight: bolder;
 }
 
+.projectGroup {
+ margin:10px;
+ padding: 5px;
+ background-color:#eefeef;
+ border-radius:5px;
+}
+
+.projectGroup>a {
+ display:block;
+}
+
+.projectDescriptor {
+ font-size:12px;
+ display:inline-block;
+}
+
+#resumeFrame {
+ width: 100%;
+ height: 100%;
+ overflow: display;
+ border: none;
+}
+
 #mainContainer {
  height:80%;
  width:60%;
@@ -35,7 +58,16 @@ a:hover {
  border-right:1px solid silver; 
  border-left:1px solid silver; 
  border-radius:15px;
+ position: relative;
+}
 
+#centerContainer {
+ text-align:center;
+}
+
+#centercontainer>p {
+ margin-top:20px;
+ text-align:justify;
 }
 
 #logoContainer {
