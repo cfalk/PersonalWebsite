@@ -8,6 +8,10 @@
  src: url(ubuntu_reg.ttf) format("truetype");
 }
 
+body {
+ min-width:750px;
+}
+
 h1 {
  font-family: inherit;
  font-weight: inherit;
@@ -26,8 +30,8 @@ a:hover {
 }
 
 .frontImage {
- width:100%;
- margin-top:20px;
+ max-height:200px;
+ text-align:center; 
  border-radius:15px;
 }
 
@@ -47,6 +51,15 @@ a:hover {
  display:inline-block;
 }
 
+.unselectable {
+user-select: none;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+}
+
 #resumeFrame {
  width: 100%;
  height: 100%;
@@ -56,8 +69,8 @@ a:hover {
 
 #mainContainer {
  height:80%;
+ min-height:600px;
  width:60%;
- min-width:600px;
  margin:0 auto;
  padding:0px;
 
@@ -81,7 +94,7 @@ a:hover {
  font-size: 36px;
  margin-top: 20px; 
  text-align:center;
-
+ cursor:default;
 }
 
 #menuContainer {
@@ -121,4 +134,5 @@ a:hover {
  font-size:16px;
  text-align: center;
  margin-top:20px;
+ cursor:default;
 } 
