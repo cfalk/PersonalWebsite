@@ -1,12 +1,22 @@
 @font-face {
- font-family: "raleway";
- src: url(raleway_thin.ttf) format("truetype");
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Raleway Thin'), local('Raleway-Thin'), url(http://themes.googleusercontent.com/static/fonts/raleway/v7/RJMlAoFXXQEzZoMSUteGWD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url(http://themes.googleusercontent.com/static/fonts/raleway/v7/IczWvq5y_Cwwv_rBjOtT0w.woff) format('woff');
 }
 
 @font-face {
- font-family: "ubuntu";
- src: url(ubuntu_reg.ttf) format("truetype");
-}
+  font-family: 'Ubuntu';
+    font-style: normal;
+      font-weight: 400;
+        src: local('Ubuntu'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v5/_xyN3apAT_yRRDeqB3sPRg.woff) format('woff');
+	}
 
 body {
  min-width:750px;
@@ -90,7 +100,8 @@ user-select: none;
 }
 
 #logoContainer {
- font-family: raleway;
+ font-family: Raleway;
+ font-weight:100;
  font-size: 36px;
  margin-top: 20px; 
  text-align:center;
@@ -98,7 +109,7 @@ user-select: none;
 }
 
 #menuContainer {
- font-family:raleway;
+ font-family:Raleway;
  margin: 0 auto;
  text-align: center;
 
@@ -119,7 +130,7 @@ user-select: none;
 #contentContainer {
  width: 60%;
  min-width:400px;
- font-family:ubuntu;
+ font-family:Ubuntu;
  font-size: 16px;
  margin:0 auto;
  margin-top:20px;
@@ -130,7 +141,7 @@ user-select: none;
 }
 
 #copyrightContainer {
- font-family:raleway;
+ font-family:Raleway;
  font-size:16px;
  text-align: center;
  margin-top:20px;
