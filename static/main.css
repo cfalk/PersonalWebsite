@@ -140,6 +140,11 @@ user-select: none;
  color:maroon;
 }
 
+.sourceLink {
+ font-size:0.8em;
+ margin-top:5px;
+}
+
 #copyrightContainer {
  font-family:Raleway;
  font-size:16px;
