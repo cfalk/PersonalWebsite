@@ -1,0 +1,13 @@
+{% for list in content.projectLists %}
+  <h1>
+  {{ list.title }}
+  </h1>
+
+  {% for project in list.projects %}
+    {% include "projectContainer.html" %}
+  {% endfor %}
+
+{% endfor %}
+
+
+More on <a href="https://github.com/cfalk">GitHub</a>.

@@ -1,0 +1,20 @@
+{% include "head.html" %}
+
+<div id="mainContainer">
+
+{% include "logo.html" %}
+{% include "menu.html" %}
+
+  <div id="contentContainer">
+
+    {% if heading %}
+      <h1> {{ heading }}</h1>
+    {% endif %}
+
+    <div id="centerContainer"> {% include template %}</div>
+
+  </div>
+
+</div>
+
+{% include "tail.html" %}

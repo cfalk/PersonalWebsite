@@ -1,0 +1,14 @@
+<div class="projectGroup">
+  {% if project.url %}
+    <a href="{{project.url}}">{{project.name}}</a>
+  {% else %}
+    {{ project.name }}
+  {% endif %}
+
+  <div class="projectDescriptor">{{project.description}}</div>
+
+  {% if project.source != "" %}
+    <a class="sourceLink" href="{{project.source}}">(source)</a>
+  {% endif %}
+</div>
+
