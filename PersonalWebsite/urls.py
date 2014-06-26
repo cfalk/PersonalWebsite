@@ -1,4 +1,5 @@
 from django.conf.urls import patterns, include, url
+from django.views.generic import RedirectView
 
 from django.contrib import admin
 admin.autodiscover()
@@ -12,8 +13,7 @@ urlpatterns = patterns('PersonalWebsite.views',
     url(r'^hackathons/?$', 'infoPage.load', {"page":"hackathons"},name="hackathons"),
     url(r'^more/?$', 'infoPage.load', {"page":"more"}, name="more"),
 
-    #TODO:Change to a separate function.
-    url(r'^blog/?$', 'infoPage.load', {"page":"blog"}, name="blog"),
+    url(r'^blog/?$', RedirectView.as_view(url="http://blog.caseyfalk.com")),
 
     url(r'^admin/', include(admin.site.urls)),
 )

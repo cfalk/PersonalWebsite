@@ -1,0 +1,24 @@
+{
+ "title":"Current Projects",
+ "projects":
+[
+  {
+    "name":"Dark Reaction Project",
+    "url": "http://darkreactions.haverford.edu",
+    "description":"A Django/MySQL/NGinx-powered recommendation system for chemical reactions.",
+    "source": ""
+  },
+  {
+    "name":"URL Cartographer",
+    "url": "http://cartographer.caseyfalk.com",
+    "description":"A Django project that maps websites based on link connections.",
+    "source": "https://github.com/cfalk/URL_Cartographer"
+  },
+  {
+    "name":"InfluNote",
+    "url": "http://influnote.caseyfalk.com",
+    "description":"A Django project to explore intermusical influence over time.",
+    "source": "https://github.com/cfalk/InfluNote"
+  }
+]
+}

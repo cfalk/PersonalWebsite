@@ -1,0 +1,37 @@
+{
+ "title":"Websites",
+ "projects":
+[
+  {
+    "name":"TRI-CO Hackathon 2014",
+    "url": "http://hackathon.haverford.edu/",
+    "description":"The official website for Haverford's Tri-Co 2014 Hackathon.",
+    "source": ""
+  },
+  {
+    "name":"FIG",
+    "url": "http://fig.haverford.edu",
+    "description":"A website about FIG, a student computing group at Haverford.",
+    "source": ""
+  },
+  {
+    "name":"RadioFords",
+    "url": "http://radiofords.com",
+    "description":"The main channel for tuning into Haverford's Radio (WHRC).",
+    "source": ""
+  },
+  {
+    "name":"Nerd House",
+    "url": "http://hcnerdhouse.co.nr",
+    "description":"A website for displaying information to the community.",
+    "source": ""
+  },
+  {
+    "name":"Haverford Robotics Team",
+    "url": "http://herolab.co.vu",
+    "description":"A website for displaying projects and member information.",
+    "source": ""
+  },
+]
+}
+

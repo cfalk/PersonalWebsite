@@ -1,0 +1,24 @@
+{
+ "title":"Hackathons",
+ "projects":  [
+  {
+    "name":"Learning Graph",
+    "url": "http://learninggraph.haverford.edu/",
+    "description":"TRI-CO Hackathon 2014: User-powered knowledge graph of skills and related careers.",
+    "source": "https://github.com/cfalk/LearningGraph"
+  },
+  {
+    "name":"I Said What?",
+    "url": "http://isaidwhat.com",
+    "description":"PennApps Spring 2014: Facebook game that uses natural language processing to turn a user's posts against them.",
+    "source": "https://github.com/PennApps2014Spring/ISaidWhat"
+  },
+  {
+    "name":"Milford Housing Project",
+    "url": "",
+    "description":"Code for Good (Delaware 2013) - JP Morgan Chase: Digitalized database for the Milford Housing Development Corporation.",
+    "source": "https://github.com/cfalk/Code4Good_2013"
+  }
+  ]
+}
+

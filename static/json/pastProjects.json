@@ -1,0 +1,30 @@
+{
+   "title":"Past Projects",
+   "projects":
+  [
+    {
+      "name":"HaverHub",
+      "url": "http://hub.fig.haverford.edu",
+      "description":"A Django/MySQL/NGinx webapp developed by FIG to improve student life at Haverford.",
+      "source": "https://github.com/cfalk/HaverApp"
+    },
+    {
+      "name":"OrgoBuddy",
+      "url": "http://flashcards.caseyfalk.com",
+      "description":"A jQuery-powered webapp designed to help Haverford students study for Organic Chemistry.",
+      "source": "https://github.com/cfalk/jQueryFlashcardEngine"
+    },
+    {
+      "name":"Websites",
+      "url": "/websites/",
+      "description":"",
+      "source": ""
+    },
+    {
+      "name":"Hackathons",
+      "url": "/hackathons/",
+      "description":"",
+      "source": ""
+    }
+  ]
+}
