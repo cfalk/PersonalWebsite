@@ -30,6 +30,11 @@ h1 {
  text-align:center;
 }
 
+h4 {
+ text-align:center;
+ font-family:"Raleway";
+}
+
 a {
  font-family: inherit;
  color: inherit;
@@ -204,10 +209,6 @@ a:hover {
  font-family:"Ubuntu";
 }
 
-.post-labels {
- display:none;
-}
-
 .post-comment-link {
  display:block;
 }
@@ -225,33 +226,76 @@ a:hover {
  font-family:"Raleway";
 }
 
-.blog-feeds, .blog-pager {
+.blog-feeds, .blog-pager, .feed-links, .post-labels, .loadmore {
  display:none;
 }
+
+.avatar-image-container img, .avatar-image-container{
+ max-height:100px;
+ height:auto;
+ border-radius:5px;
+ display:inline-block;
+}
+
+.comment-header {
+ background-color: rgba(150,150,150,0.2);
+ padding:5px 10px;
+}
+
+.comment-header .user {
+ margin-right:20px;
+}
+
+.comment-block {
+ padding-left: 20px;
+ display:inline-block;
+ vertical-align:top;
+}
+
+.comment-thread .continue{
+ text-align:center;
+}
+
+.comment-actions {
+ opacity:0.5;
+}
+
+.comment-actions a {
+ margin-right:20px;
+}
+
+.comment-thread {
+ font-family:"Raleway";
+}
+
+.comment-thread ol {
+ list-style:none;
+}
+
+
+/* # # # #  Code Section  # # # # */
 
 .codeSection {
  font-family:"Ubuntu";
  letter-spacing:2px;
 
+ display:table;
+ min-width:400px;
  max-width:640px;
+ white-space:nowrap;
  margin:0 auto;
 
  padding:10px 5px 10px 20px;
- background-color:black;
+ background-color:rgba(0,0,0,0.95);
  color:white;
 }
 
 .lineNumber, .returnLineNumber {
  opacity:0.8;
- padding:0px;
- padding-right:0.5em;
- margin-right:1em;
- color:red;
+ padding:0em 0.5em;
+ margin-right:0.75em;
+ color:green;
 }
-.lineNumber{
- border-right:1px solid white;
-}
-
 
 .returnLine, .returnLineNumber {
  margin:0px 0px 0.75em 0em;
@@ -265,11 +309,15 @@ a:hover {
 .lineNumberContainer {
  position:relative;
  display:inline-block;
+ border-right:3px solid rgba(0,0,0,0.5);
+ background-color:rgba(0,0,0,0.5);
 }
 
 .lineContainer {
  position:relative;
  display:inline-block;
+ padding-left:5px;
+ min-width:300px;
 }
 
 /* # # #  markLanguage CSS  # # # */
