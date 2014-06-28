@@ -39,12 +39,49 @@ function formatCodeSection(container) {
   $(container).html(formattedContent)
 }
 
+
+function colorLinks(container) {
+  var darkColorOptions = [
+    "#178766",
+    "#C05402",
+    "#4E4A8C",
+    "#C51671",
+    "#4B7916",
+    "#B18202",
+    "#A5311D",
+    "#751DA5",
+    "#004D99"
+  ]
+  var lightColorOptions = [
+    "rgba(179,226,205,0.3)",
+    "rgba(253,205,172,0.3)",
+    "rgba(203,213,232,0.3)",
+    "rgba(244,202,228,0.3)",
+    "rgba(230,245,201,0.3)",
+    "rgba(255,242,174,0.3)",
+    "rgba(227,114,95,0.3)",
+    "rgba(191,116,231,0.3)",
+    "rgba(77,166,255,0.3)",
+  ]
+
+  $(container).find("a").each( function(i) {
+    var randomIndex = Math.floor(Math.random()*lightColorOptions.length);
+    $(this).css("color", darkColorOptions[randomIndex]);
+    $(this).css("background-color", lightColorOptions[randomIndex]);
+  });
+}
+
+
 $(document).on("ready", function() {
 //# # # # # # # # # # # # # # # # # #
 
 $(".codeSection").each(function(index){
   formatCodeSection($(this));
 });
+
+
+colorLinks("#contentContainer, .post-body");
+
 
 //# # # # # # # # # # # # # # # # # #
 });

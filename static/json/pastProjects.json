@@ -17,13 +17,13 @@
     {
       "name":"Websites",
       "url": "/websites/",
-      "description":"",
+      "description":"Explore websites I've designed by myself and with friends.",
       "source": ""
     },
     {
       "name":"Hackathons",
       "url": "/hackathons/",
-      "description":"",
+      "description":"Check out Hackathon projects I've helped design and build.",
       "source": ""
     }
   ]

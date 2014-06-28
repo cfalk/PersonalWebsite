@@ -33,7 +33,7 @@ def load(request, page):
   elif page=="websites":
     template = "projects.html"
     heading = ""
-    with open(STATIC_DIR+"/json/hackathons.json") as f:
+    with open(STATIC_DIR+"/json/websites.json") as f:
       content["projectLists"].append( json.load(f) )
 
   else:
