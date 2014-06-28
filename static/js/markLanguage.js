@@ -1,14 +1,45 @@
+var keywordsDict = {
+  "javascript": ["var", "new", "function", "RegExp", "continue",
+                  "undefined", "null"],
+  "python": []
+}
+var boolsDict = {
+  "javascript": ["true", "false"],
+  "python": ["True", "False"]
+}
+
+var operatorsDict = {
+  "javascript": ["+","-","*","/","=","==", "===", "!=", "<", ">"],
+  "python": ["+","-","*","/","=","==", "!=", "<", ">"]
+}
+
+var syntaxDict = {
+  "javascript": ["[","]","{","}","(",")",";", ",", "."],
+  "python": ["[","]","{","}","(",")",";", ",", "."]
+}
+
+var commentDict = {
+  "javascript": "//",
+  "python": "#"
+}
+
+
+function interpretLanguage(text) {
+  return "javascript";
+}
+
+
 function applyMarker(marker, token){
   return "<span class='"+marker+"'>"+token+"</span>";
 }
 
 
-function markJavaScript(text){
-  var keywords = ["var", "new", "function", "RegExp", "continue",
-                  "undefined", "null"];
-  var bools = ["true", "false"];
-  var operators = ["+","-","*","/","=","==", "<", ">"];
-  var syntax = ["[","]","{","}","(",")",";", ",", "."];
+function markLanguage(language, text){
+  var keywords = keywordsDict[language];
+  var bools = boolsDict[language];
+  var operators = operatorsDict[language];
+  var syntax = syntaxDict[language];
+  var commentToken = commentDict[language];
 
   var formattedText = "";
   var token = "";
@@ -49,13 +80,13 @@ function markJavaScript(text){
     if (!inString && c=="\"") inString=true;
 
     if (!inString && syntax.indexOf(c)>=0) {
-      formattedText += markJavaScript(token);
+      formattedText += markLanguage(language, token);
       formattedText += applyMarker("token-syntax", c);
       token = "";
       continue;
     }
 
-    if (token=="//") inComment = true;
+    if (token==commentToken) inComment = true;
 
 
     //Check for Keywords.
@@ -104,16 +135,3 @@ function markJavaScript(text){
   return formattedText;
 }
 
-
-
-function markLanguage(language, text){
-
-  switch(language.toLowerCase()){
-    case "javascript":
-      return markJavaScript(text);
-
-    default:
-      throw "Language unknown to markLanguage function!";
-  }
-
-}

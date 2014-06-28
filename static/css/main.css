@@ -4,6 +4,7 @@
   font-weight: 100;
   src: local('Raleway Thin'), local('Raleway-Thin'), url(http://themes.googleusercontent.com/static/fonts/raleway/v7/RJMlAoFXXQEzZoMSUteGWD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 }
+
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
@@ -17,6 +18,13 @@
       font-weight: 400;
         src: local('Ubuntu'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v5/_xyN3apAT_yRRDeqB3sPRg.woff) format('woff');
 	}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Code Pro'), local('SourceCodePro-Regular'), url(http://themes.googleusercontent.com/static/fonts/sourcecodepro/v4/mrl8jkM18OlOQN8JLgasDxM0YzuT7MdOe03otPbuUS0.woff) format('woff');
+}
 
 ::selection {
  background: #FCAFA6;
@@ -166,6 +174,8 @@ a:hover {
 }
 
 .titlewrapper h1 {
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: rgba(0,0,0,0.5);
  font-size:2em;
  font-family:"Raleway";
  margin:15px;
@@ -199,6 +209,8 @@ a:hover {
 
 .post-body {
  margin:0px 40px;
+ max-width:700px;
+ margin:0 auto;
  line-height:1.3em;
  font-family:"Raleway";
 }
@@ -271,18 +283,32 @@ a:hover {
  list-style:none;
 }
 
+#blogHomeLink {
+ position:absolute;
+ box-sizing:border-box;
+ display:block;
+ top:0px;
+ left:0px;
+ font-size:2em;
+ cursor:pointer;
+ 
+ font-family:"Raleway";
+ background-color:rgba(200,200,200,0.1);
+ border-radius:3px;
+ padding:10px;
+ margin:10px;
+}
 
 /* # # # #  Code Section  # # # # */
 
 .codeSection {
- font-family:"Ubuntu";
- letter-spacing:2px;
+ font-family:"Source Code Pro";
 
  display:table;
  min-width:400px;
  max-width:640px;
  white-space:nowrap;
- margin:0 auto;
+ margin:10px auto 20px auto;
 
  padding:10px 5px 10px 20px;
  background-color:rgba(0,0,0,0.95);
@@ -344,6 +370,19 @@ a:hover {
  color:#bc80bd;
 }
 
+
+
+@media all and (max-width: 650px) {
+
+ #blogHomeLink { 
+  display: block;
+  width:100%;
+  margin:0px;
+  position:relative;
+  text-align:center;
+ }
+
+}
 
 
 

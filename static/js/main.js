@@ -1,7 +1,11 @@
 
 function formatCodeSection(container) {
-  var language = "javascript"; //TODO:Abstract this to parse contents and estimate.
-  var dirtyContent = $(container).text().split("\n");
+  var rawText = $(container).text();
+  
+  //Try to decipher which language is being used.
+  var language = interpretLanguage(rawText); 
+
+  var dirtyContent = rawText.split("\n");
   var cleanLines = [];
   var cleanLineNumbers = [];
 
@@ -68,6 +72,7 @@ function colorLinks(container) {
     var randomIndex = Math.floor(Math.random()*lightColorOptions.length);
     $(this).css("color", darkColorOptions[randomIndex]);
     $(this).css("background-color", lightColorOptions[randomIndex]);
+    $(this).html($(this).html().trim());
   });
 }
 
