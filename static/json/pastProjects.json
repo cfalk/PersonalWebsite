@@ -9,6 +9,12 @@
       "source": "https://github.com/cfalk/HaverApp"
     },
     {
+      "name":"DuChemin Network Analysis",
+      "url": "http://duchemin.caseyfalk.com",
+      "description":"A D3.js-powered tool to analyze, filter, and explore networks -- notably the DuChemin Music Dataset.",
+      "source": "https://github.com/cfalk/DuCheminNetworkAnalysis"
+    },
+    {
       "name":"OrgoBuddy",
       "url": "http://flashcards.caseyfalk.com",
       "description":"A jQuery-powered webapp designed to help Haverford students study for Organic Chemistry.",
