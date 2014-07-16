@@ -51,12 +51,13 @@ def load(request, page):
   })
 
 
-import requests, bs4, random
+import requests, random, re
 def getVimTip():
   url = "http://zzapper.co.uk/vimtips.html"
   response = requests.get(url)
-  parsedHTML = bs4.BeautifulSoup(response.text)
-  tips = parsedHTML.find("pre").text.split("\n")
+
+  rawTips = re.findall(r"<pre>(.*)(?!<a href)", response.text, re.DOTALL)[0]
+  tips = rawTips.split("\n")
 
   cleanedTips = []
   for tip in tips:
