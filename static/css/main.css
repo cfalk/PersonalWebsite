@@ -300,7 +300,7 @@ a:hover {
  display:block;
  top:0px;
  left:0px;
- font-size:2em;
+ font-size:1.5em;
  cursor:pointer;
 
  font-family:"Raleway";
@@ -393,6 +393,29 @@ a:hover {
   margin:0px;
   position:relative;
   text-align:center;
+ }
+
+ .lineNumberContainer {
+  display:none;
+ }
+
+ .codeLine {
+  font-size:0.8em;
+  white-space:pre-wrap;
+  word-break:break-all;
+  margin:15px 0px;
+  background-color:rgba(50,50,50,0.5);
+ }
+
+ .lineContainer {
+  min-width:100px;
+ }
+
+ .codeSection, .lineSection {
+  min-width:100px;
+ }
+ .codeSection {
+  padding: 0px 5px;
  }
 
 }
