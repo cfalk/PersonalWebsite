@@ -30,6 +30,11 @@ def load(request, page):
     with open(STATIC_DIR+"/json/hackathons.json") as f:
       content["projectLists"].append( json.load(f) )
 
+  elif page=="vimTip":
+    template = "vimTip.html"
+    heading = "Random Vim Tip"
+    content = getVimTip()
+
   elif page=="websites":
     template = "projects.html"
     heading = ""
@@ -44,4 +49,36 @@ def load(request, page):
     "heading":heading,
     "content":content
   })
+
+
+import requests, bs4, random
+def getVimTip():
+  url = "http://zzapper.co.uk/vimtips.html"
+  response = requests.get(url)
+  parsedHTML = bs4.BeautifulSoup(response.text)
+  tips = parsedHTML.find("pre").text.split("\n")
+
+  cleanedTips = []
+  for tip in tips:
+    cleanTip = tip.replace("-","").replace(" ","")
+
+    if cleanTip!="" and cleanTip[0]!="\"" and cleanTip[0]!="#":
+      cleanedTips.append(tip)
+
+  tip = random.choice(cleanedTips)
+
+  tipParts = tip.split(" : ")
+  rawTip = tipParts[0]
+  tipComment = "".join(tipParts[1:])
+
+  formattedTip = "<div class='token-comment'>{}</div>".format(tipComment)
+  formattedTip += "<div class='token-string'>{}</div>".format(rawTip)
+
+  return formattedTip
+
+
+
+
+
+
 

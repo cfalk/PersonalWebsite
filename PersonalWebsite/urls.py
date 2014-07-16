@@ -13,7 +13,15 @@ urlpatterns = patterns('PersonalWebsite.views',
     url(r'^hackathons/?$', 'infoPage.load', {"page":"hackathons"},name="hackathons"),
     url(r'^more/?$', 'infoPage.load', {"page":"more"}, name="more"),
 
-    url(r'^blog/?$', RedirectView.as_view(url="http://blog.caseyfalk.com")),
+    url(r'^vim(?:tip)?/?$', 'infoPage.load', {"page":"vimTip"}, name="vimTip"),
 
-    url(r'^admin/', include(admin.site.urls)),
+    # External Redirects
+    url(r'^blog/?$',
+        RedirectView.as_view(url="http://blog.caseyfalk.com"),
+        name="blog"),
+    url(r'^\.?vimrc/?$',
+        RedirectView.as_view(url="https://github.com/cfalk/vimrc-and-colorscheme"),
+        name="vimrc"),
+
 )
+
