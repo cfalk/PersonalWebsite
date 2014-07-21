@@ -6,7 +6,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('PersonalWebsite.views',
     url(r'^$', 'infoPage.load', {"page":"home"}, name="home"),
-    url(r'^home|index$', 'infoPage.load', {"page":"home"}, name="home"),
+    url(r'^home/?|index/?$', 'infoPage.load', {"page":"home"}, name="home"),
 
     url(r'^projects/?$', 'infoPage.load', {"page":"projects"}, name="projects"),
     url(r'^websites/?$', 'infoPage.load', {"page":"websites"}, name="websites"),
