@@ -7,7 +7,7 @@
 
   <div class="projectDescriptor">{{project.description}}</div>
 
-  {% if project.source != "" %}
+  {% if project.source and project.source != "" %}
     <a class="sourceLink" href="{{project.source}}">(source)</a>
   {% endif %}
 </div>

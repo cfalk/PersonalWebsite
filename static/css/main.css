@@ -421,4 +421,27 @@ a:hover {
 }
 
 
+/* Photo Gallery */
+#photoGalleryTopMessage {
+ margin-top:1em;
+ font-size:1.2em;
+ background-color:#eefeef;
+ padding:1em;
+}
+#photoGallery a {
+ margin:0px;
+ padding:0px;
+ border-radius:0px;
+}
+.galleryImage {
+ max-width:100%;
+ border-radius:6px;
+ margin:1em 0em;
+ box-sizing:border-box;
+ border:2px solid transparent;
+}
+.galleryImage:hover {
+ border:2px solid #eef;
+}
+
 

@@ -29,6 +29,10 @@ def load(request, page):
     heading = ""
     with open(STATIC_DIR+"/json/hackathons.json") as f:
       content["projectLists"].append( json.load(f) )
+      content["more"] = {
+        "url":"https://github.com/cfalk/",
+        "name":"GitHub"
+      }
 
   elif page=="vimTip":
     template = "vimTip.html"
@@ -40,6 +44,20 @@ def load(request, page):
     heading = ""
     with open(STATIC_DIR+"/json/websites.json") as f:
       content["projectLists"].append( json.load(f) )
+      content["more"] = {
+        "url":"https://github.com/cfalk/",
+        "name":"GitHub"
+      }
+
+  elif page=="photos":
+    template = "projects.html"
+    heading = ""
+    with open(STATIC_DIR+"/json/photoGalleries.json") as f:
+      content["projectLists"].append( json.load(f) )
+      content["more"] = {
+        "url":"http://cfalk.imgur.com/all/",
+        "name":"Imgur"
+      }
 
   else:
     raise Http404
@@ -47,8 +65,9 @@ def load(request, page):
   return render(request, "infoPage.html", {
     "template":template,
     "heading":heading,
-    "content":content
+    "content":content,
   })
+
 
 
 import requests, random, re

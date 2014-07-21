@@ -1,0 +1,16 @@
+<div id="photoGalleryTopMessage">
+<b>Feel free to use my pictures.</b><br/>
+If they improve your day, they have served their purpose.
+</div>
+
+<div id="photoGallery">
+  {% for url in content.images %}
+      <a href="{{ url }}">
+        <img src="{{ url }}.jpg" class="galleryImage"/>
+      </a>
+  {% endfor %}
+</div>
+
+{% if content.more.name %}
+More on <a href="{{content.more.url}}">{{content.more.name}}</a>.
+{% endif %}

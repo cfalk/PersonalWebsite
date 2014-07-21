@@ -11,6 +11,10 @@ urlpatterns = patterns('PersonalWebsite.views',
     url(r'^projects/?$', 'infoPage.load', {"page":"projects"}, name="projects"),
     url(r'^websites/?$', 'infoPage.load', {"page":"websites"}, name="websites"),
     url(r'^hackathons/?$', 'infoPage.load', {"page":"hackathons"},name="hackathons"),
+
+    url(r'^photos/?$', 'infoPage.load', {"page":"photos"}, name="photos"),
+    url(r'^gallery/(?P<page>\w+)/$', 'gallery.gallery'),
+
     url(r'^more/?$', 'infoPage.load', {"page":"more"}, name="more"),
 
     url(r'^vim(?:tip)?/?$', 'infoPage.load', {"page":"vimTip"}, name="vimTip"),

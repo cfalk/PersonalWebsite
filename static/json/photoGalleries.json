@@ -1,0 +1,16 @@
+{
+   "title":"Galleries",
+   "projects":
+  [
+    {
+      "name":"Nature",
+      "url": "/gallery/nature/",
+      "description":"Plants, Life, and the Earth."
+    },
+    {
+      "name":"Food",
+      "url": "/gallery/food/",
+      "description":"Unjust Shots of Beautiful Food."
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 
 function formatCodeSection(container) {
   var rawText = $(container).text();
-  
+
   //Try to decipher which language is being used.
-  var language = interpretLanguage(rawText); 
+  var language = interpretLanguage(rawText);
 
   var dirtyContent = rawText.split("\n");
   var cleanLines = [];
@@ -68,11 +68,14 @@ function colorLinks(container) {
     "rgba(77,166,255,0.3)",
   ]
 
-  $(container).find("a").each( function(i) {
-    var randomIndex = Math.floor(Math.random()*lightColorOptions.length);
-    $(this).css("color", darkColorOptions[randomIndex]);
-    $(this).css("background-color", lightColorOptions[randomIndex]);
-    $(this).html($(this).html().trim());
+  $(container).find("a").filter( function() {
+    return $(this).children("img").length==0;
+  })
+    .each( function(i) {
+      var randomIndex = Math.floor(Math.random()*lightColorOptions.length);
+      $(this).css("color", darkColorOptions[randomIndex]);
+      $(this).css("background-color", lightColorOptions[randomIndex]);
+      $(this).html($(this).html().trim());
   });
 }
 
