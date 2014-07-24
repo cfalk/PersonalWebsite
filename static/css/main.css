@@ -6,10 +6,10 @@
 }
 
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 400;
-  src: local('Raleway'), url(http://themes.googleusercontent.com/static/fonts/raleway/v7/IczWvq5y_Cwwv_rBjOtT0w.woff) format('woff');
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/ODelI1aHBYDBqgeIAH2zlBM0YzuT7MdOe03otPbuUS0.woff) format('woff');
 }
 
 @font-face {
@@ -31,6 +31,7 @@
 }
 
 body {
+ font-size:1.1em;
  margin:0px;
  padding:0px;
 }
@@ -38,13 +39,13 @@ body {
 h1 {
  font-family: inherit;
  font-weight: inherit;
- font-size: 24px;
+ font-size: 1.5em;
  text-align:center;
 }
 
 h4 {
  text-align:center;
- font-family:"Raleway";
+ font-family:"Source Sans Pro";
 }
 
 a {
@@ -77,7 +78,6 @@ a:hover {
 }
 
 .projectDescriptor {
- font-size:14px;
  display:inline-block;
  padding:0px 10px;
  margin:10px 0px;
@@ -125,7 +125,7 @@ a:hover {
 }
 
 #menuContainer {
- font-family:"Raleway";
+ font-family:"Source Sans Pro";
  margin: 0 auto;
  text-align: center;
 
@@ -144,7 +144,7 @@ a:hover {
 }
 
 #contentContainer {
- font-family:"Raleway";
+ font-family:"Source Sans Pro";
 }
 
 #contentContainer a {
@@ -171,7 +171,7 @@ a:hover {
 }
 
 #copyrightContainer {
- font-family:Raleway;
+ font-family:Source Sans Pro;
  font-size:16px;
  text-align: center;
  margin:20px 0px 40px 0px;
@@ -182,14 +182,14 @@ a:hover {
 .description {
  margin-bottom:1.5em;
  text-align:center;
- font-family:"Raleway";
+ font-family:"Source Sans Pro";
 }
 
 .titlewrapper h1 {
 -webkit-text-stroke-width: 1px;
 -webkit-text-stroke-color: rgba(0,0,0,0.5);
  font-size:2em;
- font-family:"Raleway";
+ font-family:"Source Sans Pro";
  margin:15px;
  padding:0px;
 }
@@ -210,7 +210,7 @@ a:hover {
  text-align:center;
  margin:0px 0px 20px 0px;
  padding:20px 10px;
- font-family:"Raleway";
+ font-family:"Source Sans Pro";
  font-size:2em;
  background-color:rgba(180,180,180,0.1);
 }
@@ -224,7 +224,7 @@ a:hover {
  max-width:700px;
  margin:0 auto;
  line-height:1.3em;
- font-family:"Raleway";
+ font-family:"Source Sans Pro";
 }
 
 .post-footer {
@@ -240,13 +240,15 @@ a:hover {
  position:absolute;
  top:0em;
  margin:0px;
+ padding:2px 5px;
+ border-radius:5px;
+ border-top-right-radius:0px;
  font-size:0.9em;
+ font-family:"Source Sans Pro";
+
  opacity:0.8;
  color:white;
- padding:2px 5px;
  background-color:black;
- border-radius:5px;
- font-family:"Raleway";
 }
 
 .blog-feeds, .blog-pager, .feed-links, .post-labels, .loadmore {
@@ -288,7 +290,7 @@ a:hover {
 }
 
 .comment-thread {
- font-family:"Raleway";
+ font-family:"Source Sans Pro";
 }
 
 .comment-thread ol {
@@ -304,7 +306,7 @@ a:hover {
  font-size:1.5em;
  cursor:pointer;
 
- font-family:"Raleway";
+ font-family:"Source Sans Pro";
  background-color:rgba(200,200,200,0.1);
  border-radius:3px;
  padding:10px;
