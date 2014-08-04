@@ -1,49 +1,3 @@
-
-function formatCodeSection(container) {
-  var rawText = $(container).text();
-
-  //Try to decipher which language is being used.
-  var language = interpretLanguage(rawText);
-
-  var dirtyContent = rawText.split("\n");
-  var cleanLines = [];
-  var cleanLineNumbers = [];
-
-  var linesUsed = 1;
-  for (var i=0 ; i < dirtyContent.length ; i++) {
-    var dirtyLineContent = dirtyContent[i].trim();
-    var lineClasses = "codeLine";
-
-    var lineNumber = "";
-    if (dirtyLineContent[0]==">") {
-      lineNumber = "<div class='returnLineNumber unselectable'>&nbsp;</div>";
-      lineClasses += " returnLine";
-    } else if (dirtyLineContent=="") {
-      continue;
-    } else {
-      lineNumber = "<div class='lineNumber unselectable'>"+linesUsed+"</div>";
-      linesUsed++;
-    }
-
-    var formattedContent = markLanguage(language, dirtyLineContent)
-    var lineContent = "<span class='lineContent'>" +formattedContent+"</span>";
-
-
-    cleanLineNumbers.push(lineNumber);
-    cleanLines.push("<div class='"+lineClasses+"'>"+lineContent+"</div>");
-  }
-
-  var formattedContent = "<div class='lineNumberContainer'>"+
-                           cleanLineNumbers.join(" ")+
-                         "</div>" +
-                         "<div class='lineContainer'>"+
-                           cleanLines.join(" ")+
-                         "</div>";
-
-  $(container).html(formattedContent)
-}
-
-
 function colorLinks(container) {
   var darkColorOptions = [
     "#178766",
@@ -81,15 +35,5 @@ function colorLinks(container) {
 
 
 $(document).on("ready", function() {
-//# # # # # # # # # # # # # # # # # #
-
-$(".codeSection").each(function(index){
-  formatCodeSection($(this));
-});
-
-
-colorLinks("#contentContainer, .post-body");
-
-
-//# # # # # # # # # # # # # # # # # #
+  colorLinks("#contentContainer, .post-body");
 });
