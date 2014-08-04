@@ -71,6 +71,7 @@ a:hover {
  padding: 10px 5px;
  background-color:#eefeef;
  border-radius:5px;
+ box-shadow: 0px 0px 5px rgba(150,150,150,0.2);
 }
 
 .projectGroup>a {
@@ -395,6 +396,7 @@ a:hover {
 
 
 .codeSection {
+ text-align:left;
  font-family:"Source Code Pro";
  box-shadow: 0px 0px 1px black;
  background-color:rgba(0,0,0,0.9);

@@ -9,6 +9,12 @@
     "source": ""
   },
   {
+    "name":"marky.js",
+    "url": "http://marky.caseyfalk.com",
+    "description":"A JavaScript tool that allows simple lexical highlighting of many languages.", 
+    "source": "https://github.com/cfalk/marky.js"
+  },
+  {
     "name":"URL Cartographer",
     "url": "http://cartographer.caseyfalk.com",
     "description":"A Django project that maps websites based on link connections.",
