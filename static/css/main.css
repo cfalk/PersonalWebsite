@@ -394,6 +394,9 @@ a:hover {
 
 .emptyCodeLine, .emptyLineNumber { background-color:rgba(50,50,50,0.1); }
 
+.codeSectionContainer {
+ margin:0px auto;
+}
 
 .codeSection {
  text-align:left;

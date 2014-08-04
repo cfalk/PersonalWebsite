@@ -1,3 +1,4 @@
+<div id="centerContainer">
 {% for list in content.projectLists %}
   <h1>
   {{ list.title }}
@@ -12,3 +13,4 @@
 {% if content.more.name %}
 More on <a href="{{content.more.url}}">{{content.more.name}}</a>.
 {% endif %}
+</div>
