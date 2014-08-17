@@ -22,7 +22,7 @@ function colorLinks(container) {
     "rgba(77,166,255,0.3)",
   ]
 
-  $(container).find("a").filter( function() {
+  $(container).find("a:not(.marky-linkToCode)").filter( function() {
     return $(this).children("img").length==0;
   })
     .each( function(i) {
