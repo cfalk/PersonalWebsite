@@ -28,7 +28,9 @@ function colorLinks(container) {
     .each( function(i) {
       var randomIndex = Math.floor(Math.random()*lightColorOptions.length);
       $(this).css("color", darkColorOptions[randomIndex]);
-      $(this).css("background-color", lightColorOptions[randomIndex]);
+      if (!$(this).hasClass("noBackgroundColor")) {
+        $(this).css("background-color", lightColorOptions[randomIndex]);
+      }
       $(this).html($(this).html().trim());
   });
 }

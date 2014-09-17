@@ -60,9 +60,8 @@ a:hover {
 }
 
 .frontImage {
- max-height:200px;
  text-align:center;
- border-radius:15px;
+ max-width:100%;
 }
 
 .projectGroup {
@@ -96,8 +95,29 @@ a:hover {
 
 #mainContainer {
  min-height:600px;
- min-width:400px;
  position: relative;
+}
+
+#homeImageContainer {
+ position:relative;
+ margin:0 auto;
+ max-width:1000px;
+}
+#homeImageContainer .marky-linkToCode {
+ display:none;
+}
+#homeImageContainer .codeSection {
+ position:absolute;
+ right:0px;
+ bottom:0px;
+ margin:0px;
+ font-size: 0.8em;
+}
+#homeMarkyLink {
+ position:absolute;
+ right:0px;
+ bottom:0px;
+ padding:5px;
 }
 
 #centerContainer {
@@ -136,7 +156,8 @@ a:hover {
  border-bottom-left-radius:5px;
  background-color: white;
  border-bottom: 2px solid black;
- width:400px;
+ max-width:400px;
+ min-width:345px;
 }
 
 .menuLink {
@@ -343,6 +364,7 @@ a:hover {
  margin:0px;
  padding:0px;
  border-radius:0px;
+ opacity:1;
 }
 .galleryImage {
  max-width:100%;
@@ -492,6 +514,14 @@ a:hover {
   padding: 0px 10px;
  }
 
+ #homeImageContainer {
+  border-radius:initial;
+  overflow:hidden;
+ }
+ #homeImageContainer .codeSection {
+  position:relative;
+  width:100%;
+ }
 }
 
 
