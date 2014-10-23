@@ -3,6 +3,12 @@
  "projects":
 [
   {
+    "name":"Go 3.0",
+    "url": "http://go.haverford.edu",
+    "description":"A Django-powered social media site and info-hub for Haverford students.",
+    "source": "https://github.com/Haverford-FIG/GoBoard"
+  },
+  {
     "name":"Dark Reaction Project",
     "url": "http://darkreactions.haverford.edu",
     "description":"A Django/MySQL/NGinx-powered recommendation system for chemical reactions.",
