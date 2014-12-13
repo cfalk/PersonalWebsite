@@ -3,8 +3,14 @@
  "projects":
 [
   {
-    "name":"TRI-CO Hackathon 2014",
+    "name":"TRI-CO Hackathon 2015",
     "url": "http://hackathon.haverford.edu/",
+    "description":"The official website for Haverford's Tri-Co 2015 Hackathon.",
+    "source": ""
+  },
+  {
+    "name":"TRI-CO Hackathon 2014",
+    "url": "http://hackathon.haverford.edu/2014/",
     "description":"The official website for Haverford's Tri-Co 2014 Hackathon.",
     "source": ""
   },
