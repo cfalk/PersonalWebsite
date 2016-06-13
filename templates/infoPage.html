@@ -2,14 +2,19 @@
 
 <div id="mainContainer">
 
-{% include "logo.html" %}
-{% include "menu.html" %}
+<div id="menuContainer">
+  {% include "logo.html" %}
+  {% include "menu.html" %}
+
+  <div id="pageHeading">
+  {% if heading %}
+    <h1> {{ heading }}</h1>
+  {% endif %}
+  </div>
+
+</div>
 
   <div id="contentContainer">
-
-    {% if heading %}
-      <h1> {{ heading }}</h1>
-    {% endif %}
 
     {% include template %}
 

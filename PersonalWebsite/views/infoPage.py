@@ -11,10 +11,11 @@ def load(request, page):
 
   if page=="home":
     template = "home.html"
-    heading = "Welcome."
+    heading = "Welcome"
   elif page=="projects":
     template = "projects.html"
-    heading = ""
+    heading = "Projects"
+
     with open(STATIC_DIR+"/json/currentProjects.json") as f:
       content["projectLists"].append( json.load(f) )
     with open(STATIC_DIR+"/json/pastProjects.json") as f:
@@ -22,7 +23,7 @@ def load(request, page):
 
   elif page=="more":
     template = "more.html"
-    heading = "More about me."
+    heading = "More about me"
 
   elif page=="hackathons":
     template = "projects.html"

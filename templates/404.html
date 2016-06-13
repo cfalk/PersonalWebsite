@@ -1,32 +1,21 @@
-<html>
-<head>
 
-<link rel="stylesheet" text="text/css" href="static/main.css" />
-<link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico" />
-
-<title>
-Casey Falk
-</title>
-</head>
-
-<body>
+{% include "head.html" %}
 
 <div id="mainContainer">
 
-<div id="logoContainer" class="unselectable">
-Casey Falk
-</div>
+<div id="menuContainer">
+  {% include "logo.html" %}
+  {% include "menu.html" %}
 
-<div id="menuContainer" class="unselectable">
-<a href="index.html"><div class="menuLink">Home</div></a>
-<a href="projects.html"><div class="menuLink">Projects</div></a>
-<a href="more.html"><div class="menuLink">More</div></a>
+  <div id="pageHeading">
+  {% if heading %}
+    <h1>404</h1>
+  {% endif %}
+  </div>
+
 </div>
 
 <div id="contentContainer">
-<h1>
-404 Error.
-</h1>
 <div id="centerContainer">
 
 That page doesn't exist...
@@ -34,11 +23,5 @@ That page doesn't exist...
 </div>
 </div>
 
-</div>
 
-<div id="copyrightContainer" class="unselectable">
-&copy;2014 Casey Falk
-</div>
-
-</body>
-</html>
+{% include "tail.html" %}

@@ -41,6 +41,17 @@ h1 {
  font-weight: inherit;
  font-size: 1.5em;
  text-align:center;
+ background-color:#67809F;
+ color:white;
+ margin-top:0px;
+ padding:0.5em;
+}
+
+.projectGroupHeading {
+ background-color:#336E7B;
+ color:white;
+ font-size:1.35em;
+ padding:0.35em;
 }
 
 h4 {
@@ -59,9 +70,17 @@ a:hover {
  opacity:1;
 }
 
+#textBlurb {
+ background-color: #E4F1FE;
+ text-align:left;
+ padding:1em;
+ margin-bottom:2em;
+}
+
 .frontImage {
  text-align:center;
- max-width:100%;
+ display:block;
+ max-width:70%;
 }
 
 .projectGroup {
@@ -101,7 +120,7 @@ a:hover {
 #homeImageContainer {
  position:relative;
  margin:0 auto;
- max-width:1000px;
+ max-width:800px;
 }
 #homeImageContainer .marky-linkToCode {
  display:none;
@@ -112,6 +131,7 @@ a:hover {
  bottom:0px;
  margin:0px;
  font-size: 0.8em;
+ background-color:#2C3E50;
 }
 #homeMarkyLink {
  position:absolute;
@@ -138,31 +158,35 @@ a:hover {
 
 #logoContainer {
  font-family:"Raleway";
- font-weight:100;
  font-size: 36px;
  margin-top: 20px;
- text-align:center;
+ padding:0.5em 0.25em;
+ text-align:right;
+ display:block;
  cursor:default;
+ color:white;
 }
 
 #menuContainer {
  font-family:"Source Sans Pro";
  margin: 0 auto;
- text-align: center;
-
- border-top-right-radius:20px;
- border-top-left-radius:20px;
- border-bottom-right-radius:5px;
- border-bottom-left-radius:5px;
- background-color: white;
- border-bottom: 2px solid black;
- max-width:400px;
+ margin-bottom:1em;
+ background-color: #446CB3;
+ max-width:600px;
  min-width:345px;
+}
+
+#menuContainer a {
+ margin:0em 0.4em 0em 0em;
+}
+#menuContainer a:last-child {
+ margin:0em;
 }
 
 .menuLink {
  display:inline-block;
  padding: 10px;
+ background-color: #E4F1FE;
 }
 
 #contentContainer {
@@ -329,10 +353,17 @@ a:hover {
  cursor:pointer;
 
  font-family:"Source Sans Pro";
- background-color:rgba(150,200,200,0.2);
- border-radius:3px;
+ background-color:rgb(150,200,200);
  padding:10px;
  margin:10px;
+}
+
+#pageHeading {
+ margin:0.25em 0em 0em 0em;
+}
+
+#pageHeading h1 {
+ margin:0px;
 }
 
 @media all and (max-width: 650px) {
@@ -493,11 +524,10 @@ a:hover {
  box-sizing:border-box;
 }
 
-@media all and (max-width: 650px) {
+@media all and (max-width: 700px) {
  .lineNumberContainer { display:none; }
 
  .codeLine {
-  font-size:0.8em;
   white-space:pre-wrap;
   word-break:break-all;
  }
@@ -522,6 +552,23 @@ a:hover {
   position:relative;
   width:100%;
  }
+
+ .frontImage {
+  max-width:100%;
+ }
+
+ #logoContainer {
+  margin-top:0px;
+ }
+
+
 }
 
+@media all and (max-width: 400px) {
 
+ #menuContainer a {
+  margin:0em 0.35em 0em 0em;
+  font-size:0.9em;
+ }
+
+}

@@ -3,27 +3,33 @@
  "projects":
 [
   {
+    "name":"WHRC Radio",
+    "url": "http://bicoradio.com",
+    "description":"Haverford College and Bryn Mawr College's online radio.",
+    "source": "https://github.com/cfalk/radiofords"
+  },
+  {
+    "name":"The Haverford Bricolage",
+    "url": "bricolage.caseyfalk.com",
+    "description":"The original website for Haverford's Co-Op",
+    "source": "https://github.com/cfalk/BricolageCoOpWebsite"
+  },
+  {
     "name":"TRI-CO Hackathon 2015",
     "url": "http://hackathon.haverford.edu/",
     "description":"The official website for Haverford's Tri-Co 2015 Hackathon.",
-    "source": ""
+    "source": "https://github.com/cfalk/Hackathon2015"
   },
   {
     "name":"TRI-CO Hackathon 2014",
     "url": "http://hackathon.haverford.edu/2014/",
     "description":"The official website for Haverford's Tri-Co 2014 Hackathon.",
-    "source": ""
+    "source": "https://github.com/cfalk/Hackathon2014"
   },
   {
     "name":"FIG",
     "url": "http://fig.haverford.edu",
     "description":"A website about FIG, a student computing group at Haverford.",
-    "source": ""
-  },
-  {
-    "name":"RadioFords",
-    "url": "http://radiofords.com",
-    "description":"The main channel for tuning into Haverford's Radio (WHRC).",
     "source": ""
   },
   {

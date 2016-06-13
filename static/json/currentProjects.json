@@ -1,24 +1,12 @@
 {
- "title":"Current Projects",
+ "title":"Current",
  "projects":
 [
   {
-    "name":"Go 3.0",
-    "url": "http://go.haverford.edu",
-    "description":"A Django-powered social media site and info-hub for Haverford students.",
-    "source": "https://github.com/Haverford-FIG/GoBoard"
-  },
-  {
-    "name":"Dark Reaction Project",
-    "url": "http://darkreactions.haverford.edu",
-    "description":"A Django/MySQL/NGinx-powered recommendation system for chemical reactions.",
-    "source": ""
-  },
-  {
-    "name":"marky.js",
-    "url": "http://marky.caseyfalk.com",
-    "description":"A JavaScript tool that allows simple lexical highlighting of many languages.", 
-    "source": "https://github.com/cfalk/marky.js"
+    "name":"Aminuet",
+    "url": "http://aminuet.caseyfalk.com",
+    "description":"A JavaScript mixer that translates nucleotide sequences into sounds.", 
+    "source": "https://github.com/cfalk/Aminuet"
   },
   {
     "name":"URL Cartographer",
